@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/angular-route.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/aboutChefController.js"></script>
+        <script src="scripts/homeController.js"></script>
+        <script src="scripts/blogController.js"></script>
+        <link rel="stylesheet" href="styles/style.css">
+        <base href="/" />
+    </head>
+    <body ng-app="myApp">
+        <div class="row" >
+                <ul>
+                    <li>
+                        <a href="home">HOME</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>FOOD</li>
+                    <li>
+                        <a href="blog">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="aboutchef">ABOUT_CHEF</a>
+                    </li>
+                   
+                    <li>CART</li>
+                </ul>
+            </div>
+            <ng-view></ng-view>
+        <div class="footer">
+                <h3>Cities where we serve</h3>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>Nawadih</li>
+                            <li>Chirudih</li>
+                            <li>Rajabeda</li>
+                            <li>Chandrapura</li>
+                            <li>Bokaro</li>
+                            <li>Ranchi</li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>Nawadih</li>
+                            <li>Chirudih</li>
+                            <li>Rajabeda</li>
+                            <li>Chandrapura</li>
+                            <li>Bokaro</li>
+                            <li>Ranchi</li>
+                        </ul>
+                    </li> 
+                    <li>
+                        <ul>
+                            <li>Nawadih</li>
+                            <li>Chirudih</li>
+                            <li>Rajabeda</li>
+                            <li>Chandrapura</li>
+                            <li>Bokaro</li>
+                            <li>Ranchi</li>
+                        </ul>
+                    </li> 
+                </ul>
+                <ul class="social">
+                    <li>follow us:</li>
+                    <li>
+                        <ul>
+                            <li>fb</li>
+                            <li>tw</li>
+                            <li>inst</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+    </body>
+</html>
