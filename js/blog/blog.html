@@ -1,0 +1,7 @@
+<div class="container" ng-controller="BlogController">
+    
+    <div ng-repeat="blog in blogs">
+        <h2><a href="blog/{{blog.title}}">{{blog.title}}</a></h2>
+        <h3>{{blog.description | truncate}}</h3>
+    </div>
+</div>

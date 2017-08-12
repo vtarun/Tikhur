@@ -1,81 +1,35 @@
 <!doctype html>
 <html>
     <head>
-        <script src="scripts/angular.min.js"></script>
-        <script src="scripts/angular-route.min.js"></script>
-        <script src="scripts/script.js"></script>
-        <script src="scripts/aboutChefController.js"></script>
-        <script src="scripts/homeController.js"></script>
-        <script src="scripts/blogController.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles/style.css">
-        <base href="/" />
+        
+        <script src="vendor/angular.min.js"></script>
+        <script src="vendor/angular-route.min.js"></script>
+        <script src="vendor/jquery.min.js"></script>
+        <script src="vendor/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+        <script src="js/home/home.js"></script>
+        <script src="js/blog/blog.js"></script>
+        <script src="js/blog/blogpostController.js"></script>
+<!--        <script src="js/food/food.js"></script>-->
+<!--
+        <script src="js/home/home.js"></script>
+        <script src="js/aboutChef/about-chef.js"></script>
+        <script src="js/blog/blog.js"></script>
+        <script src="js/foodVendor/food-vendor.js"></script>
+-->
+        
+        <base href="/home" />
     </head>
     <body ng-app="myApp">
-        <div class="row" >
-                <ul>
-                    <li>
-                        <a href="home">HOME</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>FOOD</li>
-                    <li>
-                        <a href="blog">BLOG</a>
-                    </li>
-                    <li>
-                        <a href="aboutchef">ABOUT_CHEF</a>
-                    </li>
-                   
-                    <li>CART</li>
-                </ul>
-            </div>
-            <ng-view></ng-view>
-        <div class="footer">
-                <h3>Cities where we serve</h3>
-                <ul>
-                    <li>
-                        <ul>
-                            <li>Nawadih</li>
-                            <li>Chirudih</li>
-                            <li>Rajabeda</li>
-                            <li>Chandrapura</li>
-                            <li>Bokaro</li>
-                            <li>Ranchi</li>
-                            
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>Nawadih</li>
-                            <li>Chirudih</li>
-                            <li>Rajabeda</li>
-                            <li>Chandrapura</li>
-                            <li>Bokaro</li>
-                            <li>Ranchi</li>
-                        </ul>
-                    </li> 
-                    <li>
-                        <ul>
-                            <li>Nawadih</li>
-                            <li>Chirudih</li>
-                            <li>Rajabeda</li>
-                            <li>Chandrapura</li>
-                            <li>Bokaro</li>
-                            <li>Ranchi</li>
-                        </ul>
-                    </li> 
-                </ul>
-                <ul class="social">
-                    <li>follow us:</li>
-                    <li>
-                        <ul>
-                            <li>fb</li>
-                            <li>tw</li>
-                            <li>inst</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+        
+        <div navbar-directive></div> 
+        
+        <ng-view></ng-view>
+        
+        <div footer-directive></div>
     
     </body>
 </html>
